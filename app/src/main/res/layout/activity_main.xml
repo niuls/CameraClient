@@ -7,7 +7,8 @@
 
 	<TableLayout
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+		android:layout_height="wrap_content"
+		android:stretchColumns="1">
 		<TableRow>
 			<TextView
 				android:layout_width="wrap_content"
@@ -18,12 +19,10 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:hint="x.x.x.x"/>
-		</TableRow>
-		<TableRow>
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Port"/>
+				android:text="Port:"/>
 			<EditText
 				android:id="@+id/etPort"
 				android:layout_width="wrap_content"
@@ -31,16 +30,25 @@
 				android:hint="xxxxx"/>
 		</TableRow>
 		<TableRow>
+			<TextView
+				android:id="@+id/tvRate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Resolution: null"
+				android:layout_span="3"/>
 			<Button
 				android:id="@+id/btnConnect"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="Connect"/>
+		</TableRow>
+		<TableRow>
 			<TextView
-				android:id="@+id/tvResolu"
-				android:layout_width="wrap_content"
+				android:id="@+id/tvGPS"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="Resolution: null"/>
+				android:layout_span="4"
+				android:text="Position:null"/>
 		</TableRow>
 	</TableLayout>
 	<ImageView
